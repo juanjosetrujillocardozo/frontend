@@ -1,0 +1,271 @@
+.deleting {
+  animation: slideToInputs 1s forwards;
+}
+
+@keyframes slideToInputs {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat'}
+  
+.deleting {
+  animation: slideToInputs 1s forwards;
+}
+
+@keyframes slideToInputs {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.cars-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 50px;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: -50px;
+}
+
+.car-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: fit-content;
+  position: relative;
+  margin-top: -50px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.input-icon-wrapper {
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.input-icon {
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.input-items {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  position: relative;
+}
+
+.input-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-icon-inner {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+input {
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  padding: 10px 20px;
+  width: 200px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: #C5C5C5;
+}
+
+::placeholder {
+  color: #C5C5C5;
+}
+
+.cars-table {
+  width: 70%;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: auto;
+  margin-top: -50px;
+}
+
+.cars-table th, .cars-table td {
+  border: none;
+  padding: 8px;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  white-space: nowrap;
+}
+
+.cars-table th.aspirante-header {
+  text-align: center;
+}
+
+.cars-table th, .cars-table td.aspirante-column {
+  width: auto;
+}
+
+.cars-table th {
+  background-color: #E280BE;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 12px;
+}
+
+.cars-table td {
+  background-color: #fff;
+  color: #C5C5C5;
+  border-bottom: 1px solid #ffd1dc;
+  font-size: 14px;
+  padding: 12px;
+}
+
+.cars-table td.actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.action-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+}
+
+.page-logo {
+  width: 200px;
+  height: auto;
+  transform: scale(1);
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.cancel-button, .create-button {
+  border: 2px solid;
+  border-radius: 15px;
+  padding: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  background-color: transparent;
+  color: #C5C5C5;
+  width: calc(50% - 10px);
+}
+
+.cancel-button {
+  border-color: #E280BE;
+}
+
+.create-button {
+  border-color: #01BEDB;
+}
+
+.add-icon {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transform: translate(40%, -90%);
+}
+
+.car-form .input-icon-inner {
+  filter: grayscale(100%);
+}
+
+.car-form.visible .input-icon-inner {
+  filter: none;
+}
+
+.disabled td.actions img {
+  filter: grayscale(100%);
+  pointer-events: none;
+}
+
+.edit-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.navigation-arrow img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  transform: scale(0.5);
+}
+
+.form-buttons img {
+  margin: 0 10px;
+}

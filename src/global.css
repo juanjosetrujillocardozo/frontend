@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-container {
+  position: relative;
+}
+
+section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+#cars {
+  background: white;
+  padding-top: 100px;
+}

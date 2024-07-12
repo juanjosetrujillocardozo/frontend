@@ -1,0 +1,108 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #f0f2f5;
+  padding-bottom: 60px;
+  padding: 0 20px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.imagologo {
+  width: 56px;
+  height: 55px;
+  position: fixed;
+  top: 43px;
+  left: 58px;
+  transform: scale(0.5);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 20px;
+}
+
+.background-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  position: relative;
+  z-index: 2;
+  object-fit: contain;
+}
+
+.bienvenido-a {
+  position: absolute;
+  z-index: 1;
+  font-size: 7em;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #00249C;
+  text-align: center;
+}
+
+.monitoring-innovation {
+  font-size: 4.5em;
+  color: #00249C;
+  z-index: 3;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-shadow: 2px 2px 4px #fff, 0 0 1em #fff, 0 0 0.2em #fff;
+  white-space: nowrap;
+  text-align: center;
+}
+
+footer {
+  padding: 20px;
+}
+
+.home-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 2;
+  color: #01BEDB;
+}
+
+.home-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #01BEDB;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .bienvenido-a {
+    font-size: 3em;
+    top: 20%;
+  }
+
+  .monitoring-innovation {
+    font-size: 2em;
+    top: 30%;
+  }
+
+  .background-image {
+    max-width: 80%;
+  }
+}
