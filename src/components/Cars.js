@@ -31,7 +31,7 @@ function Cars() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:8000/cars/')
+    axios.get('https://frontend-jade-iota.vercel.app/cars')
       .then(response => setCars(response.data))
       .catch(error => console.error('Error fetching cars:', error));
   }, []);
@@ -39,7 +39,7 @@ function Cars() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const newCar = { marca, sucursal, aspirante };
-    axios.post('http://localhost:8000/cars/', newCar)
+    axios.post('https://frontend-jade-iota.vercel.app/cars', newCar)
       .then(response => {
         setCars([...cars, response.data]);
         setMarca('');
@@ -55,7 +55,7 @@ function Cars() {
     if (car) {
       setDeletingCar(car);
       setTimeout(() => {
-        axios.delete(`http://localhost:8000/cars/${id}`)
+        axios.delete(`https://frontend-jade-iota.vercel.app/cars/${id}`)
           .then(() => {
             setCars(cars.filter(car => car.id !== id));
             setMarca(car.marca);
@@ -84,7 +84,7 @@ function Cars() {
   const handleEditSubmit = (event) => {
     event.preventDefault();
     const updatedCar = { marca, sucursal, aspirante };
-    axios.put(`http://localhost:8000/cars/${editingId}`, updatedCar)
+    axios.put(`https://frontend-jade-iota.vercel.app/cars/${editingId}`, updatedCar)
       .then(response => {
         setCars(cars.map(car => (car.id === editingId ? response.data : car)));
         setMarca('');
